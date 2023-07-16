@@ -69,6 +69,8 @@ function updateTask(id) {
   tasks.splice(id, 1, { title: __updateTaskSection__title.innerText, description: __updateTaskSection__description.innerText });
   localStorage.setItem("Tasks", JSON.stringify(tasks));
   displayTasks();
+  __updateTaskSection.classList.add("sr-only");
+  __modal.classList.add("sr-only");
 }
 
 function deleteTask(id) {
