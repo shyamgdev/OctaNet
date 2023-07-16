@@ -4,28 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TaskZen</title>
+    <!-- Include Tailwind CSS from CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
+    <!-- Link to custom CSS file -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Scripts and stylesheets above are included in the head section -->
   </head>
   <body class="mt-6 relative">
     <!-- ADDTASK SECTION -->
     <section id="addTask" class="w-96 m-auto shadow rounded-2xl">
       <div id="taskForm" class="w-full px-10 py-5 flex flex-col gap-2">
+        <!-- Textarea for task title -->
         <textarea
           type="text"
           placeholder="Title"
           id="taskForm-title"
           class="outline-none rounded focus:ring-green-500"
         ></textarea>
+        <!-- Textarea for task description -->
         <textarea
           type="text"
           placeholder="Description"
           id="taskForm-description"
           class="outline-none rounded focus:ring-green-500"
         ></textarea>
-        <span class="sr-only text-red-500 font-bold"
-          >Please Fill the Task title/description</span
-        >
+        <!-- Error message for empty title/description -->
+        <span class="sr-only text-red-500 font-bold">
+          Please Fill the Task title/description
+        </span>
+        <!-- Button to add task -->
         <button
           id="taskForm-btn"
           class="w-fit shadow-xl m-auto px-3 py-2 rounded-xl active:shadow"
@@ -35,17 +43,22 @@
         </button>
       </div>
     </section>
+
     <!-- TASKS -->
     <section
       id="tasks"
       class="w-full px-20 my-12 flex flex-row justify-start flex-wrap gap-5"
-    ></section>
+    >
+      <!-- Display Tasks here -->
+    </section>
 
+    <!-- Modal for task updates -->
     <div
       id="modal"
       class="sr-only fixed top-0 bottom-0 w-full h-full backdrop-blur-sm z-10"
     ></div>
 
+    <!-- Update Task Section -->
     <section
       id="updateTaskSection"
       class="sr-only w-full md:w-3/5 h-full m-auto p-20 fixed top-0 left-0 right-0 z-20"
@@ -54,6 +67,7 @@
       <div
         class="w-full h-full m-auto flex flex-col gap-2 shadow-lg rounded-2xl p-6"
       >
+        <!-- Editable task title -->
         <span
           class="font-bold inline-block"
           id="updateTaskSection-title"
@@ -62,6 +76,7 @@
           contenteditable
           >hell</span
         >
+        <!-- Editable task description -->
         <span
           class=""
           id="updateTaskSection-description"
@@ -70,6 +85,7 @@
           >hell</span
         >
         <div class="flex flex-row gap-2 mt-5">
+          <!-- Button to update task -->
           <button
             id="taskForm-btn"
             class="w-fit shadow-xl m-auto px-3 py-2 rounded-xl active:shadow"
@@ -77,6 +93,7 @@
           >
             Update Task
           </button>
+          <!-- Button to delete task -->
           <button
             id="taskForm-btn"
             class="w-fit shadow-xl m-auto px-3 py-2 rounded-xl active:shadow"
@@ -88,6 +105,7 @@
       </div>
     </section>
 
+    <!-- Include script.js file -->
     <script src="./script.js"></script>
   </body>
 </html>

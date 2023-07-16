@@ -8,6 +8,7 @@ const __updateTaskSection = document.querySelector("#updateTaskSection");
 const __updateTaskSection__title = document.querySelector("#updateTaskSection-title");
 const __updateTaskSection__description = document.querySelector("#updateTaskSection-description");
 
+let tasksId = undefined;
 let tasks = [];
 let getTasks = localStorage.getItem("Tasks");
 if (getTasks != null) {
@@ -17,6 +18,7 @@ if (getTasks != null) {
 __modal.onclick = () => {
   __updateTaskSection.classList.add("sr-only");
   __modal.classList.add("sr-only");
+  tasksId = undefined;
 };
 
 __taskForm__title.onclick = () => {
@@ -59,6 +61,7 @@ function addTask() {
 };
 
 function viewTask(id) {
+  tasksId = id;
   __updateTaskSection.classList.remove("sr-only");
   __modal.classList.remove("sr-only");
   __updateTaskSection__title.innerText = tasks[id].title;
@@ -66,17 +69,25 @@ function viewTask(id) {
 }
 
 function updateTask(id) {
+  if (id === undefined) {
+    id = tasksId;
+  }
   tasks.splice(id, 1, { title: __updateTaskSection__title.innerText, description: __updateTaskSection__description.innerText });
   localStorage.setItem("Tasks", JSON.stringify(tasks));
   displayTasks();
   __updateTaskSection.classList.add("sr-only");
   __modal.classList.add("sr-only");
+  tasksId = undefined;
 }
 
 function deleteTask(id) {
+  if (id === undefined) {
+    id = tasksId;
+  }
   tasks.splice(id, 1);
   localStorage.setItem("Tasks", JSON.stringify(tasks));
   displayTasks();
   __updateTaskSection.classList.add("sr-only");
   __modal.classList.add("sr-only");
+  tasksId = undefined;
 }
