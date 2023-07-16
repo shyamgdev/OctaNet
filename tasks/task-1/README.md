@@ -1,6 +1,6 @@
 # Title
 
-Task: Landing Page (Admission Portal)
+Task 1: Landing Page (Admission Portal)
 
 ## Description
 
