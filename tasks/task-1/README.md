@@ -1,6 +1,6 @@
 # Title
 
-Task 1: Landing Page (Admission Portal)
+Task 1: Landing Page [Admission Portal](https://shyamgdev.github.io/OctaNet/tasks/task-1/)
 
 ## Description
 
