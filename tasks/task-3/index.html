@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SonyLiv Clone</title>
+    <link rel="stylesheet" href="./assets/index-c6664d2f.css">
+  </head>
+  <body>
+    <!-- APP -->
+    <section class="min-w-screen min-h-screen bg-[#212121]">
+      <!-- APP CONTAINER -->
+      <div class="w-full h-full">
+        <!-- HEADER -->
+        <header
+          class="transition-all w-full h-fit fixed text-white bg-black/50 shadow-2xl z-50"
+        >
+          <!-- HEADER CONTAINER -->
+          <div
+            class="w-full h-full px-8 py-2 flex flex-row flex-wrap items-center justify-between"
+          >
+            <!-- HEADER LEFT -->
+            <div class="h-12 rounded-full cursor-pointer overflow-hidden">
+              <!-- LOGO -->
+              <a href="/">
+                <img src="data:image/png;base64,UklGRiYEAABXRUJQVlA4WAoAAAAQAAAAJwAAJwAAQUxQSJUBAAABkAPZtmlb89m2bdvvfdu2bdv/Z7aNzLZC27Ztz2Dtg5u9MCImAJXhDr7+HlaArb29va0l3Dttv3ZnVxASN+zYvmNjqnkhm36RPOGDOr9JsptpLqtJ8ncfoNo3kv+6m9bkizgdrM/KysqY8zaS/DccQK3vKv/pq1etXpJjpOS1uB4DoOkvVelXkhxvwH4V5TQrAO3+qjIe/Pj2/WtvAwUvxP0UAOjyX2WXX6d2nWpe+mwXUs6zET2p8ho6e9asGcn6cp6IpzmQfTSKP5HkSFiFZSYHKKxnUq60U/TXKFOMgf+Rt8/PTwwAkHxXvCmHcoBGqYbzFpLcEQZMotzspBpoCI2+kOQap6gr4mMdmOa+X3xrPfSf2OlmHtr+IMmL10jyazNYwOekUB/xtgR6/Nb63QXaA8wIPKV1MVRHbzMw8K/q/zjobPvXjPBLqptxeqp/J/m/B8o+i7EK9P8pfg6G3uT7v378/NgM2Y9//fj5vY/KZcytL19ujnTRZV9Wr269Kq5wKK5Xt15NHxWso6pWibRGZSgAVlA4IGoCAADwDgCdASooACgAPi0UiEMhoSERxgAYAsS2AF2ZoUQjyv8ZuYH2J73fthljmyHnA/qvsA+4DfAeYD9Wv6f/APeH/qv6V+4DyZusY9AD9jPSS/Yb4Hf2M/ZH2YmiBVB1F5BWYH5JI0/J8dSrAKNXpNBCiF9RcFpvYHWBODqczlYc4AD+//6Dek/9l2fwJNLj6qam9pM7mpoW6pcQIe7zKpvl+md8p2hdm98R3uiXtu4WqLb/LOjquK2vPdCtKYinyYfkAkq5LpSmR4i///2XLhliUDl/AYXb/0PLZ+rY0zZfGFffxA9+mP29SlVVvQxZx4mws0E0zCA9hWTCv4rbQ7f+//p2EkK3J5iyv9aA0LSkMDJePioNPodH8Nj4O82jldMDC6uzrk8SqPgIHB7WnBAPR4ofFQu6t1QbhCeVz8Gu6PLgDEOhdomRdbQrC2zKH+jKnmy3Zia1Md/AsDfxushwYrVsN/RudnsBqr4pILx2Uy27YoZZM1HAgv9AWtkxOL7rozmAWFZXQKXxEfKYvzRK0FdJ0oJ63enSrkqF/QEQQ933mxbsUZx95Lvl67BmFcNSlQUrx7foOkEUfLAPEikREG0sLEZE561NFwfh6u0C4LRe3uEfHteas73pH/92qx9NK2S9CqfICuZ2ndvX+/umMQcc5MELaB7munprtip8YpAP0qytke1n8XihB50ew030zkMPkm0X2BJSCjtjinoBN/c5xscXO8NCvYeTRed4aFewfO8aBwYmu3pkL+iT//3R4TQ1k2+/p9UoqKOlpy6zg6wc14MzUHAzn4r//5GcpSWIY1AWxV7AAAA=" alt="logo" />
+              </a>
+            </div>
+            <!-- HEADER CENTER -->
+            <div
+              class="hidden w-full h-fit mt-2 font-medium text-gray-500 order-3 lg:block lg:w-fit lg:mt-0 lg:order-2"
+              id="toggle-mobile-menu"
+            >
+              <nav class="w-full h-full">
+                <ul
+                  class="w-full h-full flex flex-col lg:flex-row lg:gap-4 items-center flex-wrap"
+                >
+                  <li
+                    class="w-full p-2 cursor-pointer md:w-fit md:px-4 rounded hover:text-white"
+                  >
+                    <a href="#">TV Shows</a>
+                  </li>
+                  <li
+                    class="w-full p-2 cursor-pointer md:w-fit md:px-4 rounded hover:text-white"
+                  >
+                    <a href="#">QOTY</a>
+                  </li>
+                  <li
+                    class="w-full p-2 cursor-pointer md:w-fit md:px-4 rounded hover:text-white"
+                  >
+                    <a href="#">New</a>
+                  </li>
+                  <li
+                    class="w-full p-2 cursor-pointer md:w-fit md:px-4 rounded hover:text-white"
+                  >
+                    <a href="#">WWE</a>
+                  </li>
+                  <li
+                    class="w-full p-2 cursor-pointer md:w-fit md:px-4 rounded hover:text-white"
+                  >
+                    <a href="#">Sports</a>
+                  </li>
+                  <li
+                    class="w-full p-2 cursor-pointer md:w-fit md:px-4 rounded hover:text-white"
+                  >
+                    <a href="#">Movies</a>
+                  </li>
+                  <li
+                    class="w-full p-2 cursor-pointer md:w-fit md:px-4 rounded hover:text-white"
+                  >
+                    <a href="#">Originals</a>
+                  </li>
+                  <li
+                    class="w-full p-2 cursor-pointer md:w-fit md:px-4 rounded hover:text-white"
+                  >
+                    <a href="#">#WatchFree</a>
+                  </li>
+                  <li
+                    class="w-full p-2 cursor-pointer md:w-fit md:px-4 rounded hover:text-white"
+                  >
+                    <a href="#">Premium</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <!-- HEADER RIGHT -->
+            <div
+              class="w-fit h-12 flex flex-row items-center justify-center gap-4 order-2 lg:order-3"
+            >
+              <!-- SEARCH BUTTON -->
+              <button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-8 h-8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                  />
+                </svg>
+              </button>
+              <!-- USER PROFILE IMAGE -->
+              <div class="w-8 h-8 rounded overflow-hidden cursor-pointer">
+                <img src="data:image/png;base64,UklGRh4CAABXRUJQVlA4WAoAAAAQAAAAGwAAGwAAQUxQSCIAAAABL3D//4iIBmoaSYHuMYAXggL82zpayoj+T4AR13fpMB0vVlA4INYBAADQCwCdASocABwAPi0Sh0IhoQwCAAwBYlsAJ0yhHA3lfFC7hDdNoA/kG2q/sBvlfWAegB+uXpaeyL+2f6q+yMUwnx1/Rfokf7RQ+YOuNVs0603iCUl5rbOvqVVMl6L7a5dloAny7bAAAP7/CwAHs1+O/+bf+7+5/Cv/fs2IUsb3VQOf8mfEF0MIMah2TrWzRtZc2VFyz1zuJi3S5bcNCCUdmQ/+KLLroB6fS4+XtnTP+pOvUAWfxA09V+y/zVZISdj9ffhC4eu4bXj8mfWf8KN+Vvj+p/Cn/yK/j7/puVRzD91EbQ/rUKbOLdW5Rfwl/bQ/9mCeiRnOUb/impUUKKtQ3CHHIvRKL4E/nwTPAc72o3sSuNY3igfx7GLWGu7JInq6OhfYncx9+48kbzeOqol8DvNTElJqQlD6hCtj5nf17/uvxLFVKP6cZs5xUIzzKZ5yWlP7Hhr38Pyn9+UHPIuq3BSgqe09mSCCNaDIJ6H9tbioh9rvieN6uilafiNNvqczKxGFglapV4f4KUPtKv09tUqUQl+My8ikYILCFYJv5/Xvgrds5i/0IWRkvH8Sn8Pt5j84e/pQZzTtt+8Qsz1+l1/UwlLf6q8pQrPOvxNnnbNmk4AAAA==" alt="profile" />
+              </div>
+              <!-- TOGGLE BUTTON FOR MOBILE TO TOGGLE NAV LINKS -->
+              <div
+                class="cursor-pointer lg:hidden"
+                onclick="toggleMobileMenuBtn()"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-8 h-8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </header>
+        <!-- CAROUSEL -->
+        <div class="w-full h-full relative">
+          <!-- CAROUSEL PREVIOUS BUTTON -->
+          <button
+            class="h-full mx-4 absolute left-0 top-0 bottom-0 text-white z-20"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-8 h-8 p-2 bg-black rounded-full"
+              onclick="prevSlide()"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 19.5L8.25 12l7.5-7.5"
+              />
+            </svg>
+          </button>
+          <!-- CAROUSEL NEXT BUTTON -->
+          <button
+            class="h-full mx-4 absolute right-0 top-0 bottom-0 text-white z-20"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-8 h-8 p-2 bg-black rounded-full"
+              onclick="nextSlide()"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </button>
+          <!-- CAROUSEL CONTAINER -->
+          <div class="slider w-full h-full flex flex-row">
+            <!-- FIRST SLIDE -->
+            <div class="slide relative">
+              <div
+                class="w-1/2 absolute m-auto bottom-0 left-0 right-0 md:right-auto md:top-0 z-10"
+              >
+                <img src="./assets/01_left-48b7e830.png" alt="" />
+              </div>
+              <img
+                class="hidden md:block"
+                src="./assets/01_right-92e4a169.jpg"
+                alt=""
+              />
+              <img
+                class="md:hidden"
+                src="./assets/01_right-3273df1b.jpg"
+                alt=""
+              />
+            </div>
+            <!-- SECOND SLIDE -->
+            <div class="hidden slide relative">
+              <div
+                class="w-1/2 absolute m-auto bottom-0 left-0 right-0 md:right-auto md:top-0 z-10"
+              >
+                <img src="./assets/02_left-76d14de9.png" alt="" />
+              </div>
+              <img
+                class="hidden md:block"
+                src="./assets/02_right-26af4d2c.jpg"
+                alt=""
+              />
+              <img
+                class="md:hidden"
+                src="./assets/02_right-35fc7f22.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <!-- MAIN CONTENT -->
+        <main class="py-8 text-white font-bold">
+          <!-- CONTAINER ==> TODAYS HOT PICKS -->
+          <div class="container">
+            <!-- CONTAINER HEADER -->
+            <div class="container-header">
+              <!-- CONTAINER TITLE -->
+              <div class="container-title">Today's Hot Picks</div>
+              <!-- CONTAINER BUTTONS -->
+              <div class="container-buttons">
+                <!-- CONTAINER PREV BUTTON -->
+                <button class="container-button container-prevBtn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15.75 19.5L8.25 12l7.5-7.5"
+                    />
+                  </svg>
+                </button>
+                <!-- CONTAINER NEXT BUTTON -->
+                <button class="container-button container-nextBtn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <!-- CONTAINER CONTENT -->
+            <div class="container-content">
+              <!-- CONTAINER CARD -->
+              <div class="container-card">
+                <img src="./assets/01-413b381c.jpg" alt="" />
+              </div>
+              <!-- CONTAINER CARD -->
+              <div class="container-card">
+                <img src="./assets/02-643b1cfb.jpg" alt="" />
+              </div>
+              <!-- CONTAINER CARD -->
+              <div class="container-card">
+                <img src="./assets/03-20586cfe.jpg" alt="" />
+              </div>
+              <!-- CONTAINER CARD -->
+              <div class="container-card">
+                <img src="./assets/04-f1897345.jpg" alt="" />
+              </div>
+              <!-- CONTAINER CARD -->
+              <div class="container-card">
+                <img src="./assets/05-6777956d.jpg" alt="" />
+              </div>
+              <!-- CONTAINER CARD -->
+              <div class="container-card">
+                <img src="./assets/01-413b381c.jpg" alt="" />
+              </div>
+              <!-- CONTAINER CARD -->
+              <div class="container-card">
+                <img src="./assets/02-643b1cfb.jpg" alt="" />
+              </div>
+              <!-- CONTAINER CARD -->
+              <div class="container-card">
+                <img src="./assets/03-20586cfe.jpg" alt="" />
+              </div>
+              <!-- CONTAINER CARD -->
+              <div class="container-card">
+                <img src="./assets/04-f1897345.jpg" alt="" />
+              </div>
+              <!-- CONTAINER CARD -->
+              <div class="container-card">
+                <img src="./assets/05-6777956d.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <!-- CONTAINER ==> SPORTS -->
+          <div class="container">
+            <!-- CONTAINER HEADER -->
+            <div class="container-header">
+              <!-- CONTAINER TITLE -->
+              <div class="container-title">Sports</div>
+              <!-- CONTAINER BUTTONS -->
+              <div class="container-buttons">
+                <!-- CONTAINER PREV BUTTON -->
+                <button class="container-button container-prevBtn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15.75 19.5L8.25 12l7.5-7.5"
+                    />
+                  </svg>
+                </button>
+                <!-- CONTAINER NEXT BUTTON -->
+                <button class="container-button container-nextBtn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <!-- CONTAINER CONTENT -->
+            <div class="container-content">
+              <!-- CONTAINER CARD -->
+              <div class="container-card">
+                <img src="./assets/01-5f3d8864.jpg" alt="" />
+              </div>
+              <!-- CONTAINER CARD -->
+              <div class="container-card">
+                <img src="./assets/02-5c72bc3a.jpg" alt="" />
+              </div>
+              <!-- CONTAINER CARD -->
+              <div class="container-card">
+                <img src="./assets/03-7260f0c9.jpg" alt="" />
+              </div>
+              <!-- CONTAINER CARD -->
+              <div class="container-card">
+                <img src="./assets/04-e028cc9b.jpg" alt="" />
+              </div>
+              <!-- CONTAINER CARD -->
+              <div class="container-card">
+                <img src="./assets/05-5c185769.jpg" alt="" />
+              </div>
+              <!-- CONTAINER CARD -->
+              <div class="container-card">
+                <img src="./assets/01-5f3d8864.jpg" alt="" />
+              </div>
+              <!-- CONTAINER CARD -->
+              <div class="container-card">
+                <img src="./assets/02-5c72bc3a.jpg" alt="" />
+              </div>
+              <!-- CONTAINER CARD -->
+              <div class="container-card">
+                <img src="./assets/03-7260f0c9.jpg" alt="" />
+              </div>
+              <!-- CONTAINER CARD -->
+              <div class="container-card">
+                <img src="./assets/04-e028cc9b.jpg" alt="" />
+              </div>
+              <!-- CONTAINER CARD -->
+              <div class="container-card">
+                <img src="./assets/05-5c185769.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <!-- CONTAINER ==> UPCOMING -->
+          <div class="container">
+            <!-- CONTAINER HEADER -->
+            <div class="container-header">
+              <!-- CONTAINER TITLE -->
+              <div class="container-title">Upcoming on Liv</div>
+              <!-- CONTAINER BUTTONS -->
+              <div class="container-buttons">
+                <!-- CONTAINER PREV BUTTON -->
+                <button class="container-button container-prevBtn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15.75 19.5L8.25 12l7.5-7.5"
+                    />
+                  </svg>
+                </button>
+                <!-- CONTAINER NEXT BUTTON -->
+                <button class="container-button container-nextBtn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <!-- CONTAINER CONTENT -->
+            <div class="container-content">
+              <!-- CONTAINER CARD -->
+              <div class="container-card">
+                <img src="./assets/01-73bf42ed.jpg" alt="" />
+              </div>
+              <!-- CONTAINER CARD -->
+              <div class="container-card">
+                <img src="./assets/02-5c72bc3a.jpg" alt="" />
+              </div>
+              <!-- CONTAINER CARD -->
+              <div class="container-card">
+                <img src="./assets/03-7260f0c9.jpg" alt="" />
+              </div>
+              <!-- CONTAINER CARD -->
+              <div class="container-card">
+                <img src="./assets/04-e028cc9b.jpg" alt="" />
+              </div>
+              <!-- CONTAINER CARD -->
+              <div class="container-card">
+                <img src="./assets/05-5c185769.jpg" alt="" />
+              </div>
+              <!-- CONTAINER CARD -->
+              <div class="container-card">
+                <img src="./assets/01-73bf42ed.jpg" alt="" />
+              </div>
+              <!-- CONTAINER CARD -->
+              <div class="container-card">
+                <img src="./assets/02-5c72bc3a.jpg" alt="" />
+              </div>
+              <!-- CONTAINER CARD -->
+              <div class="container-card">
+                <img src="./assets/03-7260f0c9.jpg" alt="" />
+              </div>
+              <!-- CONTAINER CARD -->
+              <div class="container-card">
+                <img src="./assets/04-e028cc9b.jpg" alt="" />
+              </div>
+              <!-- CONTAINER CARD -->
+              <div class="container-card">
+                <img src="./assets/05-5c185769.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <!-- CONTAINER ==> LATEST EPISODES -->
+          <div class="container">
+            <!-- CONTAINER HEADER -->
+            <div class="container-header">
+              <!-- CONTAINER TITLE -->
+              <div class="container-title">Latest Episodes</div>
+              <!-- CONTAINER BUTTONS -->
+              <div class="container-buttons">
+                <!-- CONTAINER PREV BUTTON -->
+                <button class="container-button container-prevBtn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15.75 19.5L8.25 12l7.5-7.5"
+                    />
+                  </svg>
+                </button>
+                <!-- CONTAINER NEXT BUTTON -->
+                <button class="container-button container-nextBtn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <!-- CONTAINER CONTENT -->
+            <div class="container-content">
+              <!-- CONTAINER CARD -->
+              <div class="container-card">
+                <img src="./assets/01-96c1b8ce.jpg" alt="" />
+              </div>
+              <!-- CONTAINER CARD -->
+              <div class="container-card">
+                <img src="./assets/02-613ddcb2.jpg" alt="" />
+              </div>
+              <!-- CONTAINER CARD -->
+              <div class="container-card">
+                <img src="./assets/03-036f0689.jpg" alt="" />
+              </div>
+              <!-- CONTAINER CARD -->
+              <div class="container-card">
+                <img src="./assets/04-d4306430.jpg" alt="" />
+              </div>
+              <!-- CONTAINER CARD -->
+              <div class="container-card">
+                <img src="./assets/05-e4ed3a2c.jpg" alt="" />
+              </div>
+              <!-- CONTAINER CARD -->
+              <div class="container-card">
+                <img src="./assets/01-96c1b8ce.jpg" alt="" />
+              </div>
+              <!-- CONTAINER CARD -->
+              <div class="container-card">
+                <img src="./assets/02-613ddcb2.jpg" alt="" />
+              </div>
+              <!-- CONTAINER CARD -->
+              <div class="container-card">
+                <img src="./assets/03-036f0689.jpg" alt="" />
+              </div>
+              <!-- CONTAINER CARD -->
+              <div class="container-card">
+                <img src="./assets/04-d4306430.jpg" alt="" />
+              </div>
+              <!-- CONTAINER CARD -->
+              <div class="container-card">
+                <img src="./assets/05-e4ed3a2c.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </main>
+        <!-- FOOTER -->
+        <footer class="w-full px-4 py-8 bg-[#111111]" id="footer">
+          <!-- FOOTER CONTAINER -->
+          <div id="footer-container">
+            <!-- FOOTER TOP -->
+            <div
+              class="font-medium flex flex-row flex-wrap items-center justify-center text-center gap-y-6"
+              id="footer-top"
+            >
+              <div class="flex flex-col px-8">
+                <h4 class="text-white">Explore Shows</h4>
+                <a href="#" class="text-gray-500">SET Shows</a>
+                <a href="#" class="text-gray-500">SAB Shows</a>
+                <a href="#" class="text-gray-500">Marathi Shows</a>
+                <a href="#" class="text-gray-500">Kids</a>
+                <a href="#" class="text-gray-500">Aath Shows</a>
+                <a href="#" class="text-gray-500">English TV Shows</a>
+              </div>
+              <div class="flex flex-col px-8">
+                <h4 class="text-white">Top TV Shows</h4>
+                <a href="#" class="text-gray-500">Hum Rahein Na Rahein Hum</a>
+                <a href="#" class="text-gray-500">Sapno Ki Chhalaang</a>
+                <a href="#" class="text-gray-500"
+                  >Taarak Mehta Ka Ooltah Chashmah</a
+                >
+                <a href="#" class="text-gray-500">Katha Ankahee</a>
+                <a href="#" class="text-gray-500">The Kapil Sharma Show</a>
+              </div>
+              <div class="flex flex-col px-8">
+                <h4 class="text-white">Shows by Genres</h4>
+                <a href="#" class="text-gray-500">Drama</a>
+                <a href="#" class="text-gray-500">Comedy</a>
+                <a href="#" class="text-gray-500">Thriller</a>
+                <a href="#" class="text-gray-500">Romantic</a>
+                <a href="#" class="text-gray-500">Reality</a>
+              </div>
+              <div class="flex flex-col px-8">
+                <h4 class="text-white">Movies by Language</h4>
+                <a href="#" class="text-gray-500">Hindi</a>
+                <a href="#" class="text-gray-500">English Movies</a>
+                <a href="#" class="text-gray-500">Marathi</a>
+              </div>
+              <div class="flex flex-col px-8">
+                <h4 class="text-white">Movies by Genre</h4>
+                <a href="#" class="text-gray-500">Action Movies</a>
+                <a href="#" class="text-gray-500">Comedy</a>
+                <a href="#" class="text-gray-500">Drama</a>
+                <a href="#" class="text-gray-500">Romantic Movies</a>
+                <a href="#" class="text-gray-500">Horror Movies</a>
+              </div>
+              <div class="flex flex-col px-8">
+                <h4 class="text-white">Channels</h4>
+                <a href="#" class="text-gray-500">LIVE TV</a>
+                <a href="#" class="text-gray-500">Sab TV</a>
+                <a href="#" class="text-gray-500">Sony SET</a>
+                <a href="#" class="text-gray-500">Sony Marathi</a>
+                <a href="#" class="text-gray-500">BBC Earth</a>
+                <a href="#" class="text-gray-500">Sony Pal</a>
+              </div>
+              <div class="flex flex-col px-8">
+                <h4 class="text-white">Sports</h4>
+                <a href="#" class="text-gray-500">Football</a>
+                <a href="#" class="text-gray-500">Cricket</a>
+                <a href="#" class="text-gray-500">WWE</a>
+                <a href="#" class="text-gray-500">UFC</a>
+              </div>
+              <div class="flex flex-col px-8">
+                <h4 class="text-white">Explore More</h4>
+                <a href="#" class="text-gray-500">Shows</a>
+                <a href="#" class="text-gray-500">Movies</a>
+                <a href="#" class="text-gray-500">Sports</a>
+                <a href="#" class="text-gray-500">Channels</a>
+                <a href="#" class="text-gray-500">Premium</a>
+              </div>
+              <div class="flex flex-col px-8">
+                <h4 class="text-white">Top TV Shows</h4>
+                <a href="#" class="text-gray-500">The Kapil Sharma Show</a>
+                <a href="#" class="text-gray-500"
+                  >Taarak Mehta Ka Ooltah Chashmah</a
+                >
+                <a href="#" class="text-gray-500">Baalveer Returns</a>
+                <a href="#" class="text-gray-500">Ek Duje Ke Vaaste</a>
+                <a href="#" class="text-gray-500">Hero: Gayab Mode On</a>
+              </div>
+              <div class="flex flex-col px-8">
+                <h4 class="text-white">Sony LIV Originals</h4>
+                <a href="#" class="text-gray-500">Garmi</a>
+                <a href="#" class="text-gray-500">Rocket Boys</a>
+                <a href="#" class="text-gray-500">Scam 1992</a>
+                <a href="#" class="text-gray-500">Maharani</a>
+                <a href="#" class="text-gray-500">Jehanabad</a>
+                <a href="#" class="text-gray-500">Gullak</a>
+              </div>
+              <div class="flex flex-col px-8">
+                <h4 class="text-white">New On LIV</h4>
+                <a href="#" class="text-gray-500">Thuramukham</a>
+                <a href="#" class="text-gray-500">Rocket Boys</a>
+                <a href="#" class="text-gray-500"
+                  >Everything Everywhere All At Once</a
+                >
+                <a href="#" class="text-gray-500">The Whale</a>
+                <a href="#" class="text-gray-500">Christy</a>
+                <a href="#" class="text-gray-500">Lucky Hank</a>
+              </div>
+            </div>
+            <!-- FOOTER BOTTOM -->
+            <div class="pt-8 text-white text-center">
+              <p>
+                All Rights Reserved & &copy; Copyright:
+                <a
+                  class="text-blue-400 visited:text-purple-600 underline"
+                  href="http://github.com/shyamgdev"
+                  >Prashant Gupta</a
+                >
+              </p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </section>
+
+    <script>
+      // ONCLICK TOGGLE MOBILE MENU BUTTON
+      const header = document.querySelector("header");
+      const toggleMobileMenuBtn = (e) => {
+        const toggleMobileMenu = document.querySelector("#toggle-mobile-menu");
+        toggleMobileMenu.classList.toggle("hidden");
+        header.classList.toggle("bg-black");
+        header.classList.toggle("bg-black/50");
+      };
+
+      // CAROUSEL
+      const slider = document.querySelector("#slider");
+      const slides = document.querySelectorAll(".slide");
+      let currentSlideIndex = 1;
+
+      const showSlide = () => {
+        if (currentSlideIndex > slides.length) {
+          currentSlideIndex = 1;
+        } else if (currentSlideIndex < 1) {
+          currentSlideIndex = slides.length;
+        }
+        for (let i = 0; i < slides.length; i++) {
+          if (currentSlideIndex === i + 1) {
+            slides[i].classList.remove("hidden");
+          } else {
+            slides[i].classList.add("hidden");
+          }
+        }
+        currentSlideIndex++;
+      };
+
+      const prevSlide = () => {
+        currentSlideIndex -= 2;
+        showSlide();
+      };
+
+      const nextSlide = () => {
+        showSlide();
+      };
+
+      setInterval(() => {
+        showSlide();
+      }, 3000);
+
+      // CONTAINER PREV AND NEXT BUTTONS LOGIC
+      const container = document.querySelectorAll(".container-content");
+      const prevBtn = document.querySelectorAll(".container-prevBtn");
+      const nextBtn = document.querySelectorAll(".container-nextBtn");
+
+      for (let i = 0; i < prevBtn.length; i++) {
+        prevBtn[i].addEventListener("click", () => {
+          container[i].scrollLeft -= container[i].offsetWidth;
+        });
+      }
+      for (let i = 0; i < nextBtn.length; i++) {
+        nextBtn[i].addEventListener("click", () => {
+          container[i].scrollLeft += container[i].offsetWidth;
+        });
+      }
+    </script>
+  </body>
+</html>
